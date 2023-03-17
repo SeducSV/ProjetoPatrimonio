@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Patrimonio</title>
+    <link rel="shortcut icon" href="pastas/imagens/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">    
+    <link rel="stylesheet" href="pastas/css/style.css">
+</head>
+<body>
+    <main>
+        <section>
+            <img src="pastas/imagens/logo.png" alt="Logo da Prefeitura de São vicente">
+            <h2>Informações Pessoais </h2>
+            <hr>
+            <form action="">
+                <div class="holNom">
+                        <div id="holerite">
+                            <label for="hol">Holerite:</label>
+                            <input type="number" name="hol" id="hol" placeholder="Seu Holerite">
+                        </div>
+                        <div id="nome">
+                            <label for="nome">Nome:</label>
+                            <input type="text" name="nome" id="nome" placeholder="Seu Nome">
+                        </div>
+                </div>
+                    <div id="escola">
+                        <label for="escola">Escola:</label>
+                        <select name="escola" id="escola">
+                            <option style="display:none">Escolha a escola</option>
+                            <option value="escola">Escola</option>
+                            <option value="escola">Escola</option>
+                            <option value="escola">Escola</option>
+                            <option value="escola">Escola</option>
+                            <option value="escola">Escola</option>
+                          </select>
+                    </div>
+                <h2>Solicite o Equipamento </h2>
+                <hr>
+                <div id="equpmt">
+                    <label for="solicite">Solicite:</label>
+                    <select name="escola" id="escola">
+                        <option style="display:none">Escolha o equipamento</option>
+                        <option value="equipamento">equipamento</option>
+                        <option value="equipamento">equipamento</option>
+                        <option value="equipamento">equipamento</option>
+                        <option value="equipamento">equipamento</option>
+                        <option value="equipamento">equipamento</option>
+                    </select>
+                </div>
+
+                <div class="quantVol">
+                    <div id="quantidade">
+                        <label for="quant">Quantidade:</label>
+                        <input type="number" name="quant" id="quant" placeholder="quant de equipamentos">
+                    </div>
+                    <div id=voltagem>
+                        <label for="volt">Voltagem:</label>
+                        <select name="escola" id="escola">
+                            <option style="display:none">Escolha a voltagem</option>
+                            <option value="220v">220V</option>
+                            <option value="110v">110V</option>
+                            <option value="N/d">N/D</option>
+                        </select>
+                    </div>
+                </div>
+                <div id="observacao">
+                    <label for="obs">Observações:</label>
+                    <textarea name="obs" id="obs"  rows="2"></textarea>
+                </div>
+                     <input type="submit" value="Enviar">
+            </form>   
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Departamento de Patrimonio</title>
+    <link rel="shortcut icon" href="pastas/imagens/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="pastas/css/patrimonio.css">
+</head>
+<body>
+    <main>
+        <img src="pastas/imagens/logo.png" alt="Logo da Prefeitura de São vicente">
+        <button id="sair">Sair</button>
+        <h1>Departamento de Patrimonio</h1>
+        <hr>
+        <div id="container">
+            <table border="1">
+                <colgroup>
+                    <col class="numeracao">
+                    <col class="nomeEscola">
+                    <col class="data">
+                    <col class="descricao">
+                    <col class="situacao">
+                </colgroup>
+                <caption>
+                    lista de Solicitações
+                </caption>
+                <thead>
+                    <tr>
+                        <th  scope="col">Nº de Relatórios </th>
+                        <th  scope="col">Nome da Escola</th>
+                        <th  scope="col">Data de solicitação</th>
+                        <th  scope="col">Descrição</th>
+                        <th  scope="col">Situação</th>
+                    </tr>
+                </thead>
+                <tbody id="tabela">
+                    <tr>
+                        <td>0</td>
+                        <td>Escola Municipal Centro Municipal De Educação Supletiva</td>
+                        <td>17/03/2023</td>
+                        <td><button>Abrir</button></td>
+                        <td><button id="situacao">Ver Situação</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+    </main>
+    <script src="pastas/javascript/patrimonio.js"></script>
+</body>
+</html>

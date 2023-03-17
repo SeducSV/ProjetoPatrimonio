@@ -1,0 +1,170 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(240, 75%, 98%);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 22px ;
+}
+section {
+    width: 800px;
+    padding: 30px;
+    background-color: white;
+    height: auto;
+    border: none;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.404);
+}
+section img{
+    width: 200px;
+}
+h2{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+form h2:nth-child(3){
+    margin-top: 60px;
+    margin-left: -30px;
+    font-size: 28px;
+}
+hr{
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 50%;
+    background-color: hsla(0, 0%, 0%, 0.116);
+    border: none;
+    height: 2px;
+}
+form hr:nth-child(4){
+    margin-left: 20%;
+    width: 55%;
+}
+form{
+    padding-left: 30px;
+    font-size: 19px;
+}
+form input , select, #nome input, #escola select, #equpmt select, #observacao textarea{
+    border-radius: 5px;
+    padding: 5px;
+    background-color: hsl(240, 75%, 98%);
+    border: 1px solid  hsl(240, 80%, 84%);
+
+}
+.holNom{
+    display: flex;
+    width: 100%;
+    
+}
+#holerite{
+    display: flex;
+    width: 30%;
+}
+ #nome{
+    width: 70%;
+}
+
+#holerite input{
+    width: 60%;
+    align-self: center;
+    margin-top: -20px;
+}
+#nome input{
+    width: 71%;
+    margin-bottom: 20px;
+}
+#escola select, #equpmt select{
+    width: 79%;
+}
+.quantVol{
+    display: flex;
+    margin-top: 30px;
+    width: 89%;
+    justify-content: space-between;
+}
+#observacao {
+    display: flex;
+    margin-top: 30px;
+    width: 100%;
+    align-items: center;
+}
+#observacao textarea{
+    width: 71.5%;
+    margin-left: 5px;
+}
+input[type="submit"]{
+    cursor: pointer;
+    font-size: 1rem;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    width:150px;
+    color: white;
+    background-color:rgb(100, 100, 100);
+    border: none;
+}
+input[type="submit"]:hover{
+    background-color:rgb(36, 36, 36);
+}
+/* MEdia query */
+
+@media screen and (max-width:800px){
+
+     .quantVol, .holNom{        
+        flex-direction: column;
+        align-items: center;
+    }
+    #nome{
+        width: 100%;
+        align-self: flex-start;
+    }
+    #holerite{
+        width: 100%;
+        justify-content: center;
+    }
+    #holerite input{
+        width: 120px;
+        margin-top: 0px;
+    }
+    #nome{
+        margin-top: 20px;
+
+    }
+    #nome input{
+        margin-top: 0px;
+        width: 80%;
+    }
+    .quantVol input:nth-child(2){
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width:600px){
+    #observacao, #observacao label{
+        display: block;
+    }
+    #observacao textarea{
+        width: 95%;
+     }
+}
+@media screen and (max-height:900px){
+    main{
+        height: auto;
+    }
+}
+@media screen and (max-width:600px){
+    #holerite{
+        display: block;
+    }
+}

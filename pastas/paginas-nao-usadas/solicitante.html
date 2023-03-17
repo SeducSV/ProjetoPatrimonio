@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitante</title>
+    <link rel="shortcut icon" href="pastas/imagens/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="pastas/css/solicitante.css">
+</head>
+
+<body>
+    <main>
+        <section>
+            <img src="pastas/imagens/logo.png" alt="Logo da Prefeitura de São vicente">
+            <button id="sair">Sair</button>
+            <h1>Solicite um Equipamento</h1>
+            <hr>
+            <form>
+                <div class="solicitar">
+                    <label for="solicitar">Solicitar:</label>
+                    <select name="solicitar" id="solicitar">
+                        <option value="" data-default disabled selected></option>
+                        <option value="geladeira">geladeira</option>
+                        <option value="Cadeira">Cadeira</option>
+                        <option value="fogao">Fogão</option>
+                    </select>
+                </div>
+                <div class="descricao">
+                    <label for="quant">Quantidade:</label>
+                    <input type="number" name="quant" id="quant" min="0">
+                    <div class="voltagem">
+                        <label for="volt">Voltagem:</label>
+                        <select name="equi" id="equi">
+                            <option value="" data-default disabled selected></option>
+                            <option value="nada">N/D</option>
+                            <option value="110">110V</option>
+                            <option value="220">220V</option>
+                        </select>
+                    </div>
+                </div>
+                <label id="obs" for="desc">Observações:</label>
+                <textarea id="desc" name="desc" rows="2"> </textarea>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+    <script src="pastas/javascript/solicitante.js"></script>
+</body>
+
+</html>
