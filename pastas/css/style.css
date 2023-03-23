@@ -1,170 +1,140 @@
+@charset "UTF-8";
+@import "coresGlobais.css";
+
 *{
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
 }
 body{
-    background-color: hsl(240, 75%, 98%);
+    background-color: rgba(119, 136, 153, 0.219);
     font-family: Arial, Helvetica, sans-serif;
 }
 
 main{
-    width: 100%;
-    height: 100vh;
+    position: absolute;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 22px ;
-}
-section {
-    width: 800px;
-    padding: 30px;
-    background-color: white;
-    height: auto;
+    top: 50%;
+    left: 50%;
+    max-width: 90%;
+    height: 500px;
     border: none;
     box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.404);
+    transform: translate(-50%,-50%);
+
 }
-section img{
+div{
+    width: 500px;
+}
+
+main div:last-child{
+    background: center center no-repeat url("../imagens/prefeitura.jpg");
+    background-size: cover;
+}
+
+
+.login{
+    background-color: white;
+    padding: 30px;
+}
+.login img{
     width: 200px;
+    margin-bottom: 40px;
 }
-h2{
-    margin-top: 20px;
+.login h1{
+
     text-align: center;
-    font-size: 30px;
+    font-size: 2.7rem;
 }
-form h2:nth-child(3){
-    margin-top: 60px;
-    margin-left: -30px;
-    font-size: 28px;
-}
-hr{
+.login label{
     display: block;
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    width: 50%;
-    background-color: hsla(0, 0%, 0%, 0.116);
-    border: none;
-    height: 2px;
+    margin-top: 25px;
+    font-size: 1.1rem;
 }
-form hr:nth-child(4){
-    margin-left: 20%;
-    width: 55%;
-}
-form{
-    padding-left: 30px;
-    font-size: 19px;
-}
-form input , select, #nome input, #escola select, #equpmt select, #observacao textarea{
+.login input{
+    width: 100%;
+    margin-top: 5px;
+    padding: 12px;
     border-radius: 5px;
-    padding: 5px;
-    background-color: hsl(240, 75%, 98%);
-    border: 1px solid  hsl(240, 80%, 84%);
-
-}
-.holNom{
-    display: flex;
-    width: 100%;
-    
-}
-#holerite{
-    display: flex;
-    width: 30%;
-}
- #nome{
-    width: 70%;
+    color:  black;
+    background-color: var(--inputSelct);
+    border: 1px solid var(--borderInpSelc);
 }
 
-#holerite input{
-    width: 60%;
-    align-self: center;
-    margin-top: -20px;
+article{
+    position: relative;
 }
-#nome input{
-    width: 71%;
-    margin-bottom: 20px;
-}
-#escola select, #equpmt select{
-    width: 79%;
-}
-.quantVol{
-    display: flex;
-    margin-top: 30px;
-    width: 89%;
-    justify-content: space-between;
-}
-#observacao {
-    display: flex;
-    margin-top: 30px;
-    width: 100%;
-    align-items: center;
-}
-#observacao textarea{
-    width: 71.5%;
-    margin-left: 5px;
-}
-input[type="submit"]{
+span i{
+    position: absolute;
+    right: 2%;
+    top: 55%;
     cursor: pointer;
-    font-size: 1rem;
+}
+
+
+.login a{
+    cursor: pointer;
+    margin-top: 10px;
+    float: left;
+    font-size: 0.8rem;
+    margin-bottom: 20px;
+    color: black;
+    text-decoration: none;
+}
+.login a:nth-child(6){
+    float: right;
+}
+.login a:hover {
+    text-decoration: underline;
+}
+.login input[type="submit"]{
+    cursor: pointer;
     display: block;
     margin: auto;
+    font-size: 1rem;
     margin-top: 20px;
     width:150px;
     color: white;
-    background-color:rgb(100, 100, 100);
+    background-color:green;
     border: none;
 }
-input[type="submit"]:hover{
-    background-color:rgb(36, 36, 36);
-}
-/* MEdia query */
-
-@media screen and (max-width:800px){
-
-     .quantVol, .holNom{        
-        flex-direction: column;
-        align-items: center;
-    }
-    #nome{
-        width: 100%;
-        align-self: flex-start;
-    }
-    #holerite{
-        width: 100%;
-        justify-content: center;
-    }
-    #holerite input{
-        width: 120px;
-        margin-top: 0px;
-    }
-    #nome{
-        margin-top: 20px;
-
-    }
-    #nome input{
-        margin-top: 0px;
-        width: 80%;
-    }
-    .quantVol input:nth-child(2){
-        margin-bottom: 30px;
-    }
+.login input[type="submit"]:hover{
+    opacity: 0.8;;
 }
 
-@media screen and (max-width:600px){
-    #observacao, #observacao label{
+/* Media query */
+
+@media screen and (min-width: 1300px){
+    div{width: 600px;}
+    main{height: 550px;}
+    .login input[type="submit"]{ margin-top: 60px;}
+
+}
+
+@media screen and (max-width: 1000px) {
+    main {
+      height: auto;
+      max-width: 95%;
+    }
+    div:last-child {
+      display: none;
+    }
+}
+@media screen and (max-width: 490px){
+    .login a{
         display: block;
+        text-align: center;
+        float: none;
+        
     }
-    #observacao textarea{
-        width: 95%;
-     }
+        
+    .login a:nth-child(6){
+        float: none;
+    }
 }
-@media screen and (max-height:900px){
+@media only screen and (max-height: 575.98px) and (orientation: landscape){
     main{
-        height: auto;
+        margin-top: 50px;
     }
 }
-@media screen and (max-width:600px){
-    #holerite{
-        display: block;
-    }
-}
+

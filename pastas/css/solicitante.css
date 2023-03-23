@@ -1,0 +1,249 @@
+@import "coresGlobais.css";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--body);
+    color:  hsl(240, 17%, 28%);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 22px ;
+}
+section {
+    width: 800px;
+    padding: 30px;
+    background-color: white;
+    height: auto;
+    border: none;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.404);
+}
+section img{
+    width: 200px;
+}
+
+.sair{
+    float: right;
+    display: flex;
+}
+
+.sair button{
+    width: 55px;
+    background-color: var(--buttonSair);
+    color: white;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+.sair button:first-child{
+    background-color: var(--buttonVoltar);
+    color: black;
+    border: 1px solid var(--buttonVoltarBordar);
+}
+.sair button:hover{
+    opacity: 0.8;;
+}
+h2{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+form h2:nth-child(3){
+    margin-top: 60px;
+    margin-left: -30px;
+    font-size: 28px;
+}
+hr{
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 50%;
+    background-color: hsla(0, 0%, 0%, 0.116);
+    border: none;
+    height: 2px;
+}
+form hr:nth-child(4){
+    margin-left: 20%;
+    width: 55%;
+}
+form{
+    padding-left: 30px;
+    font-size: 19px;
+}
+form input , select, #nome input, #escola select, #equpmt select, #observacao textarea{
+    border-radius: 5px;
+    padding: 5px;
+    background-color:var(--inputSelct);
+    border: 1px solid var(--borderInpSelc);
+
+}
+.holNom{
+    display: flex;
+    width: 100%;
+    
+}
+#holerite, #tel{
+    display: flex;
+    width: 30%;
+}
+ #nome, #email{
+    width: 70%;
+}
+
+#holerite input, #tel input{
+    width: 60%;
+    align-self: center;
+    margin-top: -20px;
+}
+#nome input, #email input{
+    width: 71%;
+    margin-bottom: 20px;
+}
+#escola select, #equpmt select{
+    width: 79%;
+}
+.quantVol{
+    display: flex;
+    margin-top: 30px;
+    width: 89%;
+    justify-content: space-between;
+}
+
+#voltagem{
+    display: none;
+    margin-top: 10px;
+}
+#voltagem select{
+    width: 72%;
+}
+.eltVolt{
+    justify-content: center;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+}
+#observacao {
+    display: flex;
+    margin-top: 30px;
+    width: 100%;
+    align-items: center;
+}
+#observacao textarea{
+    width: 71.5%;
+    margin-left: 5px;
+}
+input[type="submit"]{
+    cursor: pointer;
+    font-size: 1rem;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    width:150px;
+    color: white;
+    background-color:green;
+    border: none;
+}
+input[type="submit"]:hover{
+    opacity: 0.8;;
+}
+/* MEdia query */
+
+
+@media screen and (max-width:800px){
+
+    .quantVol, .holNom{        
+       flex-direction: column;
+       align-items: center;
+   }
+   #nome,  #email{
+       width: 100%;
+       align-self: flex-start;
+       margin-top: 20px;
+   }
+   #holerite, #tel{
+       width: 100%;
+       justify-content: center;
+   }
+   #holerite input ,#tel input{
+       width: 120px;
+       margin-top: 0px;
+   }
+   #tel input{
+       width: 150px;
+   }
+   #nome input, #email input{
+       margin-top: 0px;
+       width: 80%;
+   }
+   .quantVol input:nth-child(2){
+       margin-bottom: 30px;
+   }
+}
+
+@media screen and (max-height:900px){
+   main{
+       height: auto;
+   }
+}
+@media screen and (max-width:600px){
+   #observacao, #observacao label{
+       display: block;
+   }
+   #observacao textarea{
+       width: 95%;
+    }
+   #holerite{
+       display: block;
+   }
+   #tel{
+       justify-content: flex-start;
+       
+   }
+   #tel input, #holerite input{
+       width: 76%;
+   }
+   h2{
+       margin-top: 50px;
+       font-size: 30px;
+   }
+}
+@media screen and (max-width:500px){
+   #tel, #voltagem{
+       display: block;
+   }
+   main{
+       height: auto;
+   }
+   form{
+       padding-left: 0px;
+   }
+   section{
+       padding: 15px;
+   }
+   #nome input, #holerite input, #tel input, #email input, #escola select, #equpmt select, 
+   #quantidade input, #voltagem select, #observacao textarea{
+       width: 100%;
+   }
+   .quantVol{
+       display: block;
+       margin-top: 20px;
+       width: 100%;
+   }
+}
+@media screen and (max-width:450px){
+    section img{
+        width: 70px;
+    }
+}

@@ -2,10 +2,44 @@ h2{
     margin-top: 20px;
     text-align: center;
 }
+
+
+/* Motivo */
+
+.just{
+    display: none;
+}
+
+.motivo{
+    margin: 20px 0px;
+    columns: 3;
+    font-size: 18px;
+}
+
 textarea{
     margin-left: 5%;
     font-size: 17px;
+    width: 90%;
+    display: none;
 }
+input[type="submit"]{
+    display: block;
+    margin: auto;
+    color: white;
+    border: none;
+    padding: 6px;
+    width: 100px;
+    font-size: 15px;
+    border-radius: 10px;
+    background-color: green;
+    margin-top: 20px;
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+    opacity: 0.8;
+}
+
+/* Button */
 .repApro button{
     margin-top: 20px;
     padding: 10px;
@@ -14,21 +48,69 @@ textarea{
     border: none;
     border-radius: 10px;
     color: white;
-    cursor: pointer;
-
+    
+    margin-right: 20px;
+    background-color: grey;
 }
 .repApro{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+}
+.repAproCor{
+    cursor: pointer;
 }
 
-.repApro button:nth-child(1){
-    margin-right: 10px;
-    background-color: brown;
+.repAproCor button:nth-child(1){
+    background-color: red;
 }
-.repApro button:nth-child(2){
+.repAproCor button:nth-child(2){
     background-color: green;
 }
-.repApro button:hover{
-    opacity: 0.9;
+
+.repAproCor button:nth-child(3){
+    margin-right: 0px;
+
+    background-color: goldenrod;
+}
+.repAproCor button:hover{
+    opacity: 0.8;;
+}
+
+/* MEdia Query */
+@media screen and (max-width:900px){
+
+    .motivo{
+        font-size: 15px;
+    }
+}
+
+
+@media screen and (max-width:760px){
+    .repApro button{
+        width: 100px;
+        font-size: 15px;
+    }
+    section img{
+        width: 200px;
+    }
+    
+    .motivo{
+        columns: 2;
+    }
+}
+@media screen and (max-width:650px){
+    h2{
+        margin-top: 40px;
+    }
+    .sair{
+        margin-bottom: 40px;
+    }
+}
+@media screen and (max-width:600px){
+
+    .motivo{
+        text-align: center;
+        columns: 1;
+    }
 }
