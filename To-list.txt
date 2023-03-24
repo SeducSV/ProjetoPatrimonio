@@ -1,0 +1,20 @@
+Todas as paginas
+	link nos botões - OK
+
+pagina situaPatrimonio: 
+	mostrar em qual botao(Recusado e Parcial) ela esta  - OK
+	precisa voltar para a pagina anterior quando clicar no botao enviar e no botão aprovado depois de mostrar o alert;
+
+Pagina Relatorio:
+	ver como deixar o grafico responsivo
+	
+
+Pagina Cadastrar Equipamentos:
+	campos = nome, voltagem, descricao, quantidade;
+	fazer um navbar	
+
+Pagina listar Equipamentos:
+	filtrar por nome;
+	fazer um navbar
+	
+	
