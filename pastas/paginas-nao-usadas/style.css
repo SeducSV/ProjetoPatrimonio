@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import "coresGlobais.css";
 
 *{
     padding: 0px;
@@ -6,7 +7,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: hsl(240, 75%, 98%);
+    background-color: rgba(119, 136, 153, 0.219);
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -56,8 +57,8 @@ main div:last-child{
     padding: 12px;
     border-radius: 5px;
     color:  black;
-    background-color: hsl(240, 75%, 98%);
-    border: 1px solid #afb6c2;
+    background-color: var(--inputSelct);
+    border: 1px solid var(--borderInpSelc);
 }
 
 article{
@@ -94,11 +95,11 @@ span i{
     margin-top: 20px;
     width:150px;
     color: white;
-    background-color:rgb(100, 100, 100);
+    background-color:green;
     border: none;
 }
 .login input[type="submit"]:hover{
-    background-color:rgb(36, 36, 36);
+    opacity: 0.8;;
 }
 
 /* Media query */

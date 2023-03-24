@@ -1,0 +1,72 @@
+@charset "UTF-8";
+@import "coresGlobais.css";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:var(--body);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+/* Main */
+main{
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    background-color: white;
+    padding: 30px;
+    max-width: 90%;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.096);
+    border-radius: 5px;
+    height: auto;
+}
+
+section img{
+    display: block;
+    margin-left: 30%;
+    width: 600px;
+}
+section p {
+    text-align: center;
+    margin-bottom: 5px;
+}
+/* Sair */
+.sair{
+    float: right;
+    display: flex;
+}
+
+.sair button{
+    width: 55px;
+    background-color: var(--buttonSair);
+    color: white;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+.sair button:first-child{
+    background-color:var(--buttonVoltar);
+    color: black;
+    border: 1px solid var(--buttonVoltarBordar);
+}
+button:hover{
+    opacity: 0.8;;
+}
+/* Grafico */
+
+.grafico{
+    margin-top: 30px;
+    padding-top: 30px;
+    width: 600px;
+    height: 660px;
+    background-color: rgba(119, 136, 153, 0.219);
+    border-radius: 30px;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+
+}

@@ -1,0 +1,64 @@
+.situacao h2{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 23px;
+}
+.situacao h3{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 23px;
+}
+.situacao textarea{
+    margin-left: 5%;
+    font-size: 17px;
+    width: 90%;
+}
+.repApro input{
+    margin-top: 20px;
+    padding: 10px;
+    width: 150px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+
+}
+.repApro{
+    display: flex;
+    justify-content: center;
+}
+
+.repApro input:nth-child(1){
+    margin-right: 10px;
+    background-color: brown;
+}
+.repApro input:nth-child(2){
+    margin-right: 10px;
+    background-color: green;
+}
+
+.repApro input:nth-child(3){
+    background-color: goldenrod;
+}
+.repApro input:hover{
+    opacity: 0.8;;
+}
+@media screen and (max-width:700px){
+    .repApro input{
+        width: 100px;
+        font-size: 15px;
+    }
+    section img{
+        width: 200px;
+    }
+}
+@media screen and (max-width:650px){
+    h2{
+        margin-top: 40px;
+    }
+    .sair{
+        margin-bottom: 40px;
+    }
+}
+

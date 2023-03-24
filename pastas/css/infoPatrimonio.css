@@ -1,4 +1,6 @@
 @charset "UTF-8";
+@import "coresGlobais.css";
+
 
 *{
     padding: 0px;
@@ -6,7 +8,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: hsl(240, 75%, 98%);
+    background-color:var(--body);
     font-family: Arial, Helvetica, sans-serif;
 }
 main{
@@ -16,6 +18,7 @@ main{
     display: flex;
     align-items: center; 
     justify-content: center;
+    flex-direction: row;
 }
 section{
     background-color: white;
@@ -49,7 +52,7 @@ section img{
 
 .sair button{
     width: 55px;
-    background-color:rgb(100, 100, 100);
+    background-color: var(--buttonSair);
     color: white;
     padding: 5px;
     border: none;
@@ -58,16 +61,13 @@ section img{
     margin-left: 20px;
 }
 .sair button:first-child{
-    background-color: gold;
+    background-color:var(--buttonVoltar);
     color: black;
-    border: 1px solid goldenrod;
-}
-.sair button:first-child:hover{
-    background-color:goldenrod
+    border: 1px solid var(--buttonVoltarBordar);
 }
 
-.sair button:last-child:hover, section button:hover{
-    background-color:rgb(36, 36, 36);
+.sair button:hover{
+   opacity: 0.8;
 }
     
 section p{
@@ -84,6 +84,25 @@ section p{
 }
 p strong{
     margin-right: 5px;
+}
+
+a{
+    text-decoration: none;
+}
+
+section > a >button{
+    display: block;
+    margin: auto;
+    width: auto;
+    margin-top: 20px;
+    background-color: green;
+    color: white;
+    font-size: 17px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
 }
 
 /* Media Query */
@@ -109,5 +128,10 @@ p strong{
     }
     section h1{
         margin-top: 20px;
+    }
+}
+@media screen and (max-height: 720px){
+    main{
+        height: auto;
     }
 }
