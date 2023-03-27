@@ -1,0 +1,251 @@
+@charset "UTF-8";
+@import "coresGlobais.css";
+
+/* Main */
+main{
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    background-color: white;
+    padding: 30px;
+    max-width: 90%;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.096);
+    border-radius: 5px;
+    height: auto;
+}
+
+main h1{
+    text-align: center;
+    margin: 20px 0px;
+}
+
+main hr{
+    display: block;
+    margin: auto;
+    width: 50%;
+    background-color: hsla(0, 0%, 0%, 0.116);
+    border: none;
+    height: 2px;
+}
+
+/* Nav */
+
+.navbar {
+    list-style-type: none;
+    margin-top: 30px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.navbar  li{
+    margin-right: 5%;
+    margin-top: 20px;
+}
+.navbar li:last-child{
+    margin-right: 0px;
+}
+.navbar button{
+    cursor: pointer;
+    padding: 10px;
+    width: auto;
+    border: none;
+    background-color:rgb(100, 100, 100);
+    border-radius: 10px;
+    font-size: 16px;
+    color: white;
+}
+.navbar button:hover{
+    opacity: 0.8;;
+}
+/* Filtros */
+fieldset{
+    margin-top: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.11);
+    padding: 0px 20px ;
+    padding-bottom: 25px;
+    border-radius: 10px;
+    width: auto;
+}
+
+.filtro{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.filtro div:nth-child(1){
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    
+}
+
+.filtro div:nth-child(2){
+    display: flex;
+    width: 10%;
+    margin-left: 20px;
+    align-items: center;
+    
+
+}
+.filtro div:nth-child(1) select, .filtro div:nth-child(2) select,  .filtro div:nth-child(2) input[type="number"]{
+    background-color:var(--inputSelct);
+    border: 1px solid  var(--borderInpSelc);
+    border-radius: 5px;
+    padding: 5px;
+    margin-right: 20px;
+}
+.filtro div:nth-child(1) select:nth-child(2){
+    width: 100%;
+    margin-right: 5px;
+
+}
+.filtro div:nth-child(2){
+    width: 50%;
+}
+.filtro div:nth-child(2) input[type="number"]{
+    width: 40%;
+}
+.filtro label{
+    margin-right: 5px;
+}
+
+.filtro input[type="submit"], .filtro input[type="reset"]{
+    cursor: pointer;
+    padding:6px;
+    width: auto;
+    border: none;
+    background-color:green;
+    color: white;
+    border-radius: 5px;
+    font-size: 17px;
+}
+.filtro input[type="reset"]{
+    margin-left: 20px;
+    background-color: rgb(121, 3, 3);
+}
+/* Tabela */
+
+div#container{
+    margin-top: 30px;
+    height: 550px;
+    overflow-x: auto;
+    overflow-y: auto;
+
+}
+table{
+    margin: auto;
+    margin-top: 50px;
+    border-collapse: collapse;
+    width: 80%;
+    text-align: center;
+}
+caption{
+    
+    font-size: 1.3em;
+    font-weight: bold;
+}
+td, th{
+    border: 1px solid black;
+    padding: 10px;
+}
+thead,tbody  tr:nth-child(even){
+    background-color: lightgray;
+}
+thead > tr > th{
+    position: sticky;
+    top: -1px;
+    color: white;
+    background-color: #383838;
+}
+
+td button{
+    cursor: pointer;
+    padding: 10px;
+    width: 60px;
+    border: 1px solid goldenrod;
+    background-color: gold;
+    border-radius: 10px;
+}
+#situacao{
+    background-color:rgb(100, 100, 100);
+    width: 100px;
+    color: white;
+    border: none;
+    cursor: initial;
+}
+td button:hover{
+    background-color:  goldenrod;
+}
+/* Media Query */
+
+@media screen and (max-width:1500px){
+    .filtro div:nth-child(2){
+        width: 100%;
+        margin-left: 0px;
+        justify-content: center;
+    }
+}
+
+/* Media Query */
+@media screen and (max-width:1310px){
+    .filtro{
+        flex-direction: column;
+    }
+    .filtro div:nth-child(2){
+        margin-top: 10px;
+        justify-content: flex-start;
+    }
+    h1{
+        font-size: 33px;
+    }
+    .filtro div:nth-child(1) {
+        justify-content: flex-start;
+        
+    }
+}
+
+@media screen   and (max-width:1000px){
+    table{
+        width: 700px;
+    }
+}
+
+
+@media screen and (max-width:780px){
+
+    .navbar button{
+        font-size: 15px;        
+    }
+    h1{
+        font-size: 30px;
+    }
+    
+    .filtro div:nth-child(2){
+        flex-wrap: wrap;
+    }
+    
+    .filtro input[type="submit"], .filtro input[type="reset"]{
+        margin-top: 10px;
+        
+    }
+}
+@media screen and (max-width:660px){
+    h1{
+        font-size: 25px;
+    }
+    #solicit,#data{
+        margin-top: 20px;
+        width: 100%;
+    }
+    
+}
+@media screen and (max-width:570px){
+    
+    .navbar{
+        flex-wrap: wrap;
+    }
+    .navbar li{
+        margin-top: 20px;
+    }
+}

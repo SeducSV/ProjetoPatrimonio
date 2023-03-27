@@ -6,6 +6,10 @@
     margin: 0px;
     box-sizing: border-box;
 }
+.chart {
+    width: 100%; 
+    min-height: 450px;
+  }
 
 body{
     background-color:var(--body);

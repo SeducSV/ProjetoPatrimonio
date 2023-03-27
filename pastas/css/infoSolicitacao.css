@@ -1,0 +1,100 @@
+@charset "UTF-8";
+@import "coresGlobais.css";
+
+
+main{
+    max-width: 100%;
+    padding: 22px;
+    height: 100vh;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    flex-direction: row;
+}
+section{
+    background-color: white;
+    padding: 30px;
+    width: 900px;
+    height: auto;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.096);
+    border-radius: 5px;
+}
+
+section h1{
+    text-align: center;
+    margin: 20px 0px;
+}
+
+section hr{
+    display: block;
+    margin: auto;
+    width: 50%;
+    background-color: hsla(0, 0%, 0%, 0.116);
+    border: none;
+    height: 2px;
+}
+.sair button{
+    width: 55px;
+    background-color: var(--buttonVoltar);
+    color: black;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+    margin-bottom: 5    0px;
+}
+.sair button:hover{
+   opacity: 0.8;
+}
+    
+section p{
+    margin-top: 40px;
+    font-size: 19px;
+}
+
+.info{
+    display: flex;
+    flex-wrap: wrap;
+}
+.info p{
+    margin-right: 20px;
+}
+p strong{
+    margin-right: 5px;
+}
+
+a{
+    text-decoration: none;
+}
+
+section > a >button{
+    display: block;
+    margin: auto;
+    width: auto;
+    margin-top: 20px;
+    background-color: green;
+    color: white;
+    font-size: 17px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+/* Media Query */
+
+@media screen and (max-width:550px){
+    section{
+        padding: 20px;
+    }
+    section h1{
+        margin-top: 20px;
+    }
+}
+@media screen and (max-height: 720px){
+    main{
+        height: auto;
+    }
+}

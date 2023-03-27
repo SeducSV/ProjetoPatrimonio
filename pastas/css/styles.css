@@ -1,12 +1,6 @@
 @charset "UTF-8";
 @import "coresGlobais.css";
 
-*{
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-}
-
 body{
     background-color:var(--body);
     font-family: Arial, Helvetica, sans-serif;
@@ -77,6 +71,7 @@ span i{
     margin-bottom: 20px;
     color: black;
     text-decoration: none;
+    width: 100%;
 }
 .login a:nth-child(6){
     float: right;

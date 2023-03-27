@@ -1,0 +1,105 @@
+h2{
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+/* Motivo */
+
+.just{
+    display: none;
+}
+
+.motivo{
+    margin: 20px 0px;
+    columns: 3;
+    font-size: 18px;
+}
+
+textarea{
+    margin-left: 5%;
+    font-size: 17px;
+    width: 90%;
+    display: none;
+}
+input[type="submit"]{
+    display: block;
+    margin: auto;
+    color: white;
+    border: none;
+    padding: 6px;
+    width: 100px;
+    font-size: 15px;
+    border-radius: 10px;
+    background-color: green;
+    margin-top: 20px;
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+    opacity: 0.8;
+}
+
+/* Button */
+.repApro button{
+    margin-top: 20px;
+    padding: 10px;
+    width: 150px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    color: white;    
+    margin-right: 20px;
+    cursor: pointer;
+    background-color: grey;
+}
+.repApro{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.repApro button:nth-child(1){
+    background-color: red;
+}
+
+#aprovada{
+    background-color: green;
+}
+
+.repApro button:nth-child(3){
+    margin-right: 0px;
+    background-color: goldenrod;
+}
+.repApro button:hover{
+    opacity: 0.8;;
+}
+
+/* MEdia Query */
+@media screen and (max-width:900px){
+
+    .motivo{
+        font-size: 15px;
+    }
+}
+
+
+@media screen and (max-width:760px){
+    .repApro button{
+        width: 100px;
+        font-size: 15px;
+    }
+    .motivo{
+        columns: 2;
+    }
+}
+@media screen and (max-width:650px){
+    h2{
+        margin-top: 40px;
+    }
+}
+@media screen and (max-width:600px){
+
+    .motivo{
+        text-align: center;
+        columns: 1;
+    }
+}

@@ -1,0 +1,178 @@
+@charset "UTF-8";
+
+@import "coresGlobais.css";
+/* Main */
+
+
+main{
+    display: block;
+    margin: auto;
+    margin-top: 3%;
+    background-color: white;
+    padding: 30px 10px;
+    width: 65%;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.096);
+    border-radius: 5px;
+    height: auto;
+}
+form{
+    padding: 10px 90px;
+}
+/* Titulo */
+main h1{
+    text-align: center;
+    margin: 20px 0px;
+}
+main hr{
+    display: block;
+    margin: auto;
+    width: 50%;
+    background-color: hsla(0, 0%, 0%, 0.116);
+    border: none;
+    height: 2px;
+}
+/*  Nome */
+.nome{
+    font-size: 20px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+.nome label{
+    margin-right: 5px;
+}
+.nome input{
+    width: 90%;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: var( --inputSelct);
+    border: 1px solid var(--borderInpSelc);
+    
+}
+
+input[type="submit"]:hover{
+    background-color:rgb(36, 36, 36);
+}
+/* Quantidade e voltagem */
+.quantVolt{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    float: left;
+    justify-content: space-between;
+}
+.quant input{
+    width: 60%;
+}
+.quantVolt input, .quantVolt select{
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-left: 5px;
+    padding: 5px;   
+    background-color: var( --inputSelct);
+    border: 1px solid var(--borderInpSelc);
+}
+
+.eltVolt{
+    justify-content: center;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    padding-right: 3%;
+}
+#eletrico{
+    margin-bottom: 10px;
+}
+#voltagem select{
+    width: 71%;
+}
+#voltagem {
+    display: none;
+}
+/* Descricao */
+.descricao{
+    display: inline-flex;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+.descricao label{
+    margin-right: 5px;
+}
+
+.descricao textarea{
+    width: 87%;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: var( --inputSelct);
+    border: 1px solid var(--borderInpSelc);
+}
+
+input[type="submit"]{
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    font-size: 1rem;
+    margin-top: 20px;
+    padding: 10px;
+    width:150px;
+    border-radius: 10px;
+    color: white;
+    background-color:green;
+    border: none;
+}
+
+/* Media query */
+
+@media screen and (max-width:1300px){
+    main{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:1050px){
+    main{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:940px){
+    .quantVolt{
+        flex-direction: column;
+    }
+    #eletrico{
+        margin-top: 50px;
+    }
+    
+.quant input{
+    width: 66%;
+}
+}
+
+@media screen and (max-width:680px){
+    form{
+        padding: 10px 40px;
+    }
+}
+
+@media screen and (max-width:480px){
+    .quant, #voltagem, .nome, .descricao{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .quant input, .nome input, .descricao textarea{
+        width: 100%;
+    }
+    form{
+        padding: 10px 10px;
+    }
+    h1{
+        font-size: 32px;
+    }
+    #eletrico label:nth-child(1) {
+       display: block;
+    }
+}
+

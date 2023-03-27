@@ -54,11 +54,11 @@ while($row_niveis_ava = mysqli_fetch_assoc($resultado_niveis_ava)){
            /* Titulo */
           titleTextStyle: {
             fontSize: 26,
-            color: 'red',
+            color: '#333',
             bold: true,
             textAlign: 'center'
           },
-
+          
           
          /*  colors: ['green', 'red', 'goldenrod'] */ 
         };
@@ -67,6 +67,10 @@ while($row_niveis_ava = mysqli_fetch_assoc($resultado_niveis_ava)){
 
         chart.draw(data, options);
       }
+      
+      $(window).resize(function(){
+        drawChart();
+      });
     </script>
   </head>
   <body>
