@@ -1,0 +1,76 @@
+
+
+Oieee Sabrina, estão aqui sugestões para possiveis modificações !
+
+--------------- Index -----------------
+
+Foto mais atual da prefeitura - :/
+
+------------- Solicitante - Para as escolas --------------
+
+
+
+No botão pesquisar, trocar por solicitar. - OK
+
+Tirar o "Pesquisar:". -OK
+
+Achamos mais prático criar um formulário com as seguintes informações em campos diferentes:
+
+- Equipamento, ex: GELADEIRA,FOGÃO,CADEIRA,MESA,... (essa lista ainda vai ser enviada pelo Ale para gente) - OK
+
+- Quantidade (input númerico) - OK
+
+- Voltagem ( N/D, 110v, 220v) - OK
+
+- Observações ( input +/- 200 caracteres) - a pessoa vai descrever como ela quer o equipamento. - OK
+
+- Botão de enviar. - OK
+
+------------ Departamento de Patrimônio -------------------
+
+
+*Um exemplo de como seria : foto exemplo lista (esta em imagens)
+
+coluna 1 - numeração - Ok
+
+coluna 2 - nome da escola -OK
+
+coluna 3 - data de solicitação -OK
+
+- botão de abrir no final de cada linha -OK
+
+
+
++ DEVOLUTIVA ( se foi aprovada e se não foi precisa ter a justificativa) - OK
+
+
+
+
+
+---------- Secretaria / Prefeito --------------------------
+
+Acesso a movimentação de pedidos e recebidos 
+
+
+------------------- Relatorio --------------------------
+
+Relatorio Da Solicitação Escolar
+	- situação (aprovado, recusado, parcial)
+	- relatorio ( numero do relatorio)
+
+Informações do Solicitante e Escola
+	- Holerite do professor
+	- Nome do professor
+	- Email
+	- Escola
+	- Telefone da Escola
+
+Infomações do Equipamento
+	- Equipamento
+	- Quantidade
+	- Voltagem
+	- Observações
+
+Devolutiva do Patrimonio
+	- Resposta do patrimonio
+

@@ -7,7 +7,8 @@ window.onload = function() {
                 document.querySelector('#voltagem').style.display = "block"
             }
             else{
-                document.querySelector('#voltagem').style.display = "none"
+                document.querySelector('#voltagem').style.display = "none";
+                document.querySelector('#volt').selectedIndex = 0;
 
             }
         });

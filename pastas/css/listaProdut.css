@@ -1,7 +1,6 @@
 @charset "UTF-8";
 @import "coresGlobais.css";
 
-
 /* Main */
 main{
     display: block;
@@ -9,9 +8,10 @@ main{
     margin-top: 20px;
     background-color: white;
     padding: 30px;
-    width: 70%;
+    max-width: 90%;
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.096);
     border-radius: 5px;
+    height: auto;
 }
 
 main h1{
@@ -27,26 +27,57 @@ main hr{
     border: none;
     height: 2px;
 }
-main img{
-    width: 250px;
+/* Filtros */
+fieldset{
+    margin-top: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.11);
+    padding: 0px 20px ;
+    padding-bottom: 25px;
+    border-radius: 10px;
+    width: auto;
 }
 
-main #sair{
-    float: right;
-    width: 50px;
-    background-color: var(--buttonSair);
-    color: white;
-    padding: 5px;
-    border: none;
+.filtro{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+#nome{
+    width: 80%;
+}
+#nome input{
+    width: 75%;
+    background-color:var(--inputSelct);
+    border: 1px solid  var(--borderInpSelc);
     border-radius: 5px;
+    padding: 5px;
+}
+#nome label{
+    margin-right: 5px;
+}
+.button{
+    width: 200px;
+}
+
+
+.button input[type="submit"], .button input[type="reset"]{
     cursor: pointer;
+    padding:6px;
+    width: auto;
+    border: none;
+    background-color:green;
+    color: white;
+    border-radius: 5px;
+    font-size: 17px;
 }
-
-main #sair:hover{
-    background-color:rgb(36, 36, 36);
+.button input[type="reset"]{
+    margin-left: 20px;
+    background-color: rgb(121, 3, 3);
 }
-
-
+.button input[type="submit"]:hover, .button input[type="reset"]:hover{
+    opacity: .8;
+}
 /* Tabela */
 
 div#container{
@@ -102,33 +133,15 @@ td button:hover{
 }
 /* Media Query */
 
-@media screen   and (max-width:1000px){
-    table{
-        width: 700px;
-    }
-}
-@media screen and (max-width:700px){
-
-    main img{
-        width: 200px;
-    }
-}
-
-/* Media Query */
 @media screen and (max-width:1150px){
     h1{
         font-size: 33px;
     }
-    main img{
-        width: 200px;
-    }
-    main{
-        width: 90%;
-    }
 }
-@media screen and (max-height:770px){
-    body{
-        height: auto;
+
+@media screen and (max-width:1050px){
+    #nome input{
+        width: 60%;
     }
 }
 
@@ -137,18 +150,40 @@ td button:hover{
         width: 700px;
     }
 }
-@media screen and (max-width:780px){
 
-    ul button{
-        font-size: 15px;        
-    }
+
+
+@media screen and (max-width:850px){
     h1{
         font-size: 30px;
     }
-}
-@media screen and (max-width:650px){
-    h1{
-        font-size: 25px;
+    .filtro{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #nome{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    #nome input{
+        width: 70%;
     }
     
 }
+@media screen and (max-width:690px){
+    h1{
+        font-size: 25px;
+    }
+    #nome input{
+        width: 60%;
+    }
+
+} 
+@media screen and (max-width:540px){
+
+    #nome input{
+        margin-top: 5px;
+        width: 100%;
+    }
+
+} 

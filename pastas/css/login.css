@@ -1,0 +1,131 @@
+@charset "UTF-8";
+@import "coresGlobais.css";
+
+
+main{
+    position: absolute;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    max-width: 90%;
+    height: 500px;
+    border: none;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.404);
+    transform: translate(-50%,-50%);
+
+}
+main div{
+    width: 500px;
+}
+
+main div:last-child{
+    background: center center no-repeat url("../imagens/prefeitura.jpg");
+    background-size: cover;
+}
+
+
+.login{
+    background-color: white;
+    padding: 30px;
+}
+.login img{
+    width: 200px;
+    margin-bottom: 40px;
+}
+.login h1{
+
+    text-align: center;
+    font-size: 2.7rem;
+}
+.login label{
+    display: block;
+    margin-top: 25px;
+    font-size: 1.1rem;
+}
+.login input{
+    width: 100%;
+    margin-top: 5px;
+    padding: 12px;
+    border-radius: 5px;
+    color:  black;
+    background-color: var(--inputSelct);
+    border: 1px solid var(--borderInpSelc);
+}
+
+article{
+    position: relative;
+}
+.icon{
+    position: absolute;
+    right: 2%;
+    top: 55%;
+    cursor: pointer;
+}
+
+
+.login a{
+    cursor: pointer;
+    margin-top: 10px;
+    float: left;
+    font-size: 0.8rem;
+    margin-bottom: 20px;
+    color: black;
+    text-decoration: none;
+}
+.login a:nth-child(6){
+    float: right;
+}
+.login a:hover {
+    text-decoration: underline;
+}
+.login input[type="submit"]{
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    font-size: 1rem;
+    margin-top: 20px;
+    width:150px;
+    color: white;
+    background-color:green;
+    border: none;
+}
+.login input[type="submit"]:hover{
+    opacity: 0.8;;
+}
+
+/* Media query */
+
+@media screen and (min-width: 1300px){
+   main div{width: 600px;}
+    main{height: 550px;}
+    .login input[type="submit"]{ margin-top: 60px;}
+
+}
+
+@media screen and (max-width: 1000px) {
+    main {
+      height: auto;
+      max-width: 95%;
+    }
+    div:last-child {
+      display: none;
+    }
+}
+@media screen and (max-width: 490px){
+    .login a{
+        display: block;
+        text-align: center;
+        float: none;
+        
+    }
+        
+    .login a:nth-child(6){
+        float: none;
+    }
+}
+@media only screen and (max-height: 575.98px) and (orientation: landscape){
+    main{
+        margin-top: 50px;
+    }
+}
+

@@ -18,11 +18,10 @@
             <img src="../imagens/prefeitura-relatorio.png" alt="Logo Prefeitura Municipal São Vicente">
             <p>Cidade Monumento da História Pátria</p>
             <p>Cellula Mater da Nacionalidade</p>
-
            <?php require 'dados.php';?> 
            
     <div class="grafico">
-    <div id="piechart"></div> <!-- Mostrar o grafico na pagina -->
+    <div id="piechart" class="chart"></div> <!-- Mostrar o grafico na pagina -->
     </div>
 
         </section>
