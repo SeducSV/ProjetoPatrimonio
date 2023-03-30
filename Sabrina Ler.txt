@@ -1,0 +1,39 @@
+Boa tarde :)
+
+Infelizmente não entendi muito bem como fazer no caso do dropdown, poderia fazer para mim ou me explicar melhor amanhã.
+
+E poderia verificar se precisa fazer novas paginas, se sim, descreva aqui para eu fazer amanha;
+
+Agradeço desde já.
+-----------------------------------------------------------------------
+
+Oi!
+
+Bom dia!
+
+Deixei a página favoritada(precisa do xammp ligado)
+Entrando no notepad ++, já está no ponto com os dropdowns
+
+
+-----------------------------------------------------------------------
+
+Bom dia!!
+
+Colocamos um lista no lugar dos botões em "listSolicit"
+
+
+-----------------------------------------------------------------------
+
+Boa tarde!
+
+Validei quase todos os campos do solicitante (falta o nome);
+Arrumei a tela "listSolicit";
+Coloquei um campo(outro span) para mostrar quais dados do grafico esta mostrando quando clicar em uma das partes do grafico.
+
+
+-----------------------------------------------------------------------
+
+Bom dia!
+
+Pedirei para me mostrar exatamente o ponto da validação do nome quando eu chegar (Fiquei confuso, porque os dados ainda não são de "BD").
+
