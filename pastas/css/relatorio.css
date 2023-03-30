@@ -6,11 +6,6 @@
     margin: 0px;
     box-sizing: border-box;
 }
-.chart {
-    width: 100%; 
-    min-height: 450px;
-  }
-
 body{
     background-color:var(--body);
     font-family: Arial, Helvetica, sans-serif;
@@ -31,8 +26,8 @@ main{
 
 section img{
     display: block;
-    margin-left: 30%;
-    width: 600px;
+    margin: auto;
+    width:20%;
 }
 section p {
     text-align: center;
@@ -46,15 +41,11 @@ section p {
 
 .sair button{
     width: 55px;
-    background-color: var(--buttonSair);
-    color: white;
     padding: 5px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     margin-left: 20px;
-}
-.sair button:first-child{
     background-color:var(--buttonVoltar);
     color: black;
     border: 1px solid var(--buttonVoltarBordar);
@@ -63,14 +54,93 @@ button:hover{
     opacity: 0.8;;
 }
 /* Grafico */
+.organizar{
+    display: flex;
+    flex-direction: row;
+    padding-top: 50px;
+    
+}
 
-.grafico{
+.grafico h1,.grafico-escola{
+    text-align: center;
+}
+.grafico, .grafico-escola{
     margin-top: 30px;
     padding-top: 30px;
-    width: 600px;
-    height: 660px;
-    background-color: rgba(119, 136, 153, 0.219);
+    width: 40%;
+    height: auto;
+    background-color:var(--inputSelct);
     border-radius: 30px;
-    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    padding-bottom: 2%;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;}
 
+/* grafico escola */
+.div-escola{
+    padding-left: 20px;
+    width: 70%;
+    
+}
+.div-escola select{
+    border-radius: 5px;
+    padding: 7px;
+    width: 85%;
+    background-color:var(--inputSelct);
+    border: 1px solid var(--borderInpSelc);
+}
+.div-escola input{
+    vertical-align: middle;
+    float: right;
+    cursor: pointer;
+    padding:6px;
+    width: auto;
+    border: none;
+    background-color:green;
+    color: white;
+    border-radius: 5px;
+    font-size: 17px;
+}
+.div-escola label{
+    font-size: 19px;
+}
+.grafico-escola{
+    width: 54%;
+    height: auto;
+    padding-bottom: 1%;
+    margin-left: 5%;
+}
+
+/* Informações dp grafico */
+
+.informacoes-grafico{
+    text-align: center;
+}
+.informacoes-grafico h3{
+    margin-top: 20px;
+}
+.informacoes-grafico span{
+    display: block;
+    background-color: var(--inputSelct);
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+    text-align: initial;
+    padding-left: 10%;
+    margin-left: 30px;
+    margin-top: 20px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+#opcao{
+    background-color: #383838;
+    color: white;
+    padding-left: 0px;
+    text-align: center;
+}
+.span{
+    display: none;
+    height: auto;
+}
+.informacoes-grafico span:hover{
+    background-color: goldenrod;
+    color: white;
 }

@@ -1,0 +1,206 @@
+@charset "UTF-8";
+@import "coresGlobais.css";
+
+body{
+    background-color:var(--body);
+    font-family: Arial, Helvetica, sans-serif;
+    color:  hsl(240, 17%, 28%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+main{
+    display: flex;
+    max-width: 90%;
+    height: 500px;
+    border: none;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.404);
+
+
+}
+div{
+    width: 500px;
+    background-color: white;
+}
+
+/* Primeira div */
+.login, .solicitante{
+    padding: 30px;
+}
+.login img{
+    width: 200px;
+    margin-bottom: 40px;
+}
+
+.login h1,.solicitante h2{
+    text-align: center;
+    font-size: 2.7rem;
+}
+.login label{
+    display: block;
+    margin-top: 25px;
+    font-size: 1.1rem;
+}
+.login input{
+    width: 95%;
+    margin-top: 5px;
+    padding: 12px;
+    border-radius: 5px;
+    color:  black;
+    background-color:var(--inputSelct);
+    border: 1px solid var(--borderInpSelc);
+}
+
+article{
+    position: relative;
+}
+span i{
+    position: absolute;
+    right: 7%;
+    top: 55%;
+    cursor: pointer;
+}
+
+.login a{
+    cursor: pointer;
+    margin-top: 10px;
+    float: left;
+    font-size: 0.8rem;
+    margin-bottom: 20px;
+    color: black;
+    text-decoration: none;
+    width: 100%;
+}
+.login a:nth-child(6){
+    float: right;
+    margin-right: 5%;
+}
+.login a:hover {
+    text-decoration: underline;
+}
+.login input[type="submit"]{
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    font-size: 1rem;
+    margin-top: 20px;
+    width:150px;
+    color: white;
+    background-color: rgb(1, 156, 1);
+    border: none;
+}
+.login input[type="submit"]:hover, .solicitante button:hover{
+    opacity: 0.8;;
+}
+
+
+/* Segunda div */
+.linhas{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 10px;
+    height: 100%;
+    float: left;
+}
+#linhaP, #linhaU{
+    height: 200px;
+    width: 1px;
+    background-color: hsl(240, 75%, 98%);
+    border: 1px solid  hsl(240, 80%, 84%);
+    box-shadow: 0px 0px 3px  hsl(240, 80%, 84%);
+}
+.linhas p{
+    margin: 20px 0px;
+}
+
+.solicitante h2{
+    margin-top: 17%;
+}
+.solicitante p{
+    display: block;
+    margin: auto;
+    margin-top: 12%;
+    font-size: 18px;
+    width:90%;
+    text-align: center;
+}
+.solicitante button{
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    font-size: 1.3rem;
+    margin-top: 12%;
+    padding: 15px;
+    border-radius: 9px;
+    width:190px;
+    color: white;
+    background-color: rgb(1, 156, 1);
+    border: none;
+    
+}
+.solicitante a{
+    text-decoration: none;
+}
+/* Media query */
+
+@media screen and (min-width: 1300px){
+    div{width: 600px;}
+    main{height: 550px;}
+    .login input[type="submit"]{ margin-top: 60px;}
+
+}
+
+@media screen and (max-width: 1000px) {
+
+    body{
+        height: auto;
+    }
+    main {
+        margin: 6% 0px;
+         height: auto;
+         width: auto;
+        flex-direction: column;
+    }
+    .linhas{
+        flex-direction: row;
+        width: 90%;
+        margin-left: 6%;
+    }
+    #linhaP, #linhaU{
+        height: 1px;
+        width: 100%;
+
+    }
+    
+    .linhas p{    
+        margin: 0px 20px;
+    }
+
+    div{
+        height: auto;
+        max-width: 100%;
+    }
+}
+@media screen and (max-width: 490px){
+    .login a{
+        display: block;
+        text-align: center;
+        float: none;
+        
+    }
+        
+    .login a:nth-child(6){
+        float: none;
+    }
+}
+@media only screen and (max-height: 575.98px) and (orientation: landscape){
+    main{
+        margin-top: 50px;
+    }
+}
+
