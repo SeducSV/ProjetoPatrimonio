@@ -3,22 +3,26 @@
 
 
 main{
-    position: absolute;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+
+}
+section{
+    margin-top: 10%;
     display: flex;
-    top: 50%;
-    left: 50%;
     max-width: 90%;
     height: 500px;
     border: none;
     box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.404);
-    transform: translate(-50%,-50%);
-
 }
-main div{
+section div{
     width: 500px;
 }
 
-main div:last-child{
+ #imagem{
     background: center center no-repeat url("../imagens/prefeitura.jpg");
     background-size: cover;
 }
@@ -66,11 +70,11 @@ article{
 .login a{
     cursor: pointer;
     margin-top: 10px;
-    float: left;
     font-size: 0.8rem;
     margin-bottom: 20px;
     color: black;
     text-decoration: none;
+    
 }
 .login a:nth-child(6){
     float: right;
@@ -83,7 +87,6 @@ article{
     display: block;
     margin: auto;
     font-size: 1rem;
-    margin-top: 20px;
     width:150px;
     color: white;
     background-color:green;
@@ -96,9 +99,9 @@ article{
 /* Media query */
 
 @media screen and (min-width: 1300px){
-   main div{width: 600px;}
+    section div{width: 600px;}
     main{height: 550px;}
-    .login input[type="submit"]{ margin-top: 60px;}
+    .login input[type="submit"]{ margin-top: 20px;}
 
 }
 
@@ -107,7 +110,7 @@ article{
       height: auto;
       max-width: 95%;
     }
-    div:last-child {
+    #imagem {
       display: none;
     }
 }

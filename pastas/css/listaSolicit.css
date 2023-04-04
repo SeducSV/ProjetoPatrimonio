@@ -70,52 +70,39 @@ fieldset{
 .filtro{
     display: flex;
     align-items: center;
-    margin-top: 10px;
+    flex-wrap: wrap;
+    width: 100%;
 }
-
-.filtro div:nth-child(1){
+.filtro #listas-solicitacao{
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    
+    min-width: 25%;
+}
+.filtro #escolher-escola select{
+    width: 90%;
 }
 
-.filtro div:nth-child(2){
-    display: flex;
-    width: 10%;
-    margin-left: 20px;
-    align-items: center;
-    
-
-}
-.filtro div:nth-child(1) select, .filtro div:nth-child(2) select,  .filtro div:nth-child(2) input[type="number"]{
+.filtro #escolher-escola select, .filtro #data select,  .filtro #solicit input[type="number"], .filtro #listas-solicitacao select{
     background-color:var(--inputSelct);
     border: 1px solid  var(--borderInpSelc);
     border-radius: 5px;
     padding: 5px;
     margin-right: 20px;
 }
-.filtro div:nth-child(1) select:nth-child(2){
-    width: 100%;
-    margin-right: 5px;
 
+.filtro #solicit, .filtro #listas-solicitacao, .filtro #escolher-escola {
+    margin-top: 20px;
 }
-.filtro div:nth-child(2){
-    width: 50%;
+.filtro #data{ 
+    margin-top: 10px;
 }
-.filtro div:nth-child(2) input[type="number"]{
-    width: 40%;
-}
-.filtro label{
-    margin-right: 5px;
-}
-
 .filtro input[type="submit"], .filtro input[type="reset"]{
+    margin-top: 20px;
     cursor: pointer;
     padding:6px;
     width: auto;
     border: none;
-    background-color:green;
+    background-color:rgb(24, 119, 0);
     color: white;
     border-radius: 5px;
     font-size: 17px;
@@ -179,31 +166,22 @@ td button:hover{
 }
 /* Media Query */
 
-@media screen and (max-width:1500px){
-    .filtro div:nth-child(2){
-        width: 100%;
-        margin-left: 0px;
-        justify-content: center;
-    }
-}
 
 /* Media Query */
 @media screen and (max-width:1310px){
-    .filtro{
-        flex-direction: column;
-    }
-    .filtro div:nth-child(2){
-        margin-top: 10px;
-        justify-content: flex-start;
-    }
+
     h1{
         font-size: 33px;
-    }
-    .filtro div:nth-child(1) {
-        justify-content: flex-start;
-        
+    
+}
+}
+@media screen and (max-width:1310px){
+
+    .filtro #escolher-escola select{
+        width: 70%;
     }
 }
+
 
 @media screen   and (max-width:1000px){
     table{
@@ -220,23 +198,11 @@ td button:hover{
     h1{
         font-size: 30px;
     }
-    
-    .filtro div:nth-child(2){
-        flex-wrap: wrap;
-    }
-    
-    .filtro input[type="submit"], .filtro input[type="reset"]{
-        margin-top: 10px;
-        
-    }
+  
 }
 @media screen and (max-width:660px){
     h1{
         font-size: 25px;
-    }
-    #solicit,#data{
-        margin-top: 20px;
-        width: 100%;
     }
     
 }
@@ -247,5 +213,21 @@ td button:hover{
     }
     .navbar li{
         margin-top: 20px;
+    }
+    .filtro{
+        padding: 0px;
+    }
+    .filtro #escolher-escola select,.filtro #listas-solicitacao select, .filtro #data select{
+        margin-right: 0px;
+        width: 79%;
+    }
+    .filtro #listas-solicitacao select, .filtro #data select{
+        width: 82%;
+    }
+    #data, #listas-solicitacao {
+        width: 100%;
+    }
+    #data select{
+        width: 50% ;
     }
 }

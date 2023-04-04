@@ -1,27 +1,23 @@
 @charset "UTF-8";
 @import "coresGlobais.css";
 
-*{
+* {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
 }
-.chart {
-    width: 100%; 
-    min-height: 450px;
-  }
 
-body{
-    background-color:var(--body);
+body {
+    background-color: var(--body);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
 }
 /* Main */
-main{
+main {
     display: block;
     margin: auto;
     margin-top: 20px;
-    background-color: white;
+    background-color: #fff;
     padding: 30px;
     max-width: 90%;
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.096);
@@ -29,48 +25,174 @@ main{
     height: auto;
 }
 
-section img{
+section img {
     display: block;
-    margin-left: 30%;
-    width: 600px;
+    margin: auto;
+    width: 20%;
 }
+
 section p {
     text-align: center;
     margin-bottom: 5px;
 }
+
 /* Sair */
-.sair{
+.sair {
     float: right;
     display: flex;
 }
 
-.sair button{
+.sair button {
     width: 55px;
-    background-color: var(--buttonSair);
-    color: white;
     padding: 5px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     margin-left: 20px;
-}
-.sair button:first-child{
-    background-color:var(--buttonVoltar);
+    background-color: var(--buttonVoltar);
     color: black;
     border: 1px solid var(--buttonVoltarBordar);
 }
-button:hover{
-    opacity: 0.8;;
-}
-/* Grafico */
 
-.grafico{
+button:hover {
+    opacity: 0.8;
+    ;
+}
+
+/* Grafico */
+.organizar-graficos,.organizar-graficoEscola {
+    display: flex;
+    flex-direction: row;
+    padding-top: 50px;
+
+}
+
+.grafico h1,
+.grafico-escola {
+    text-align: center;
+}
+
+.grafico,
+.grafico-escola {
     margin-top: 30px;
     padding-top: 30px;
-    width: 600px;
-    height: 660px;
-    background-color: rgba(119, 136, 153, 0.219);
+    width: 50%;
+    height: auto;
+    background-color: #f0ede7;
     border-radius: 30px;
-    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    padding-bottom: 2%;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+.grafico {
+    width: 43%;
+}
+/* form */
+form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
 
+.div-escola select {
+    border-radius: 5px;
+    padding: 7px;
+    width: 85%;
+    background-color: #f0ede7;
+    border: 1px solid #dad1c0;
+}
+
+.div-escola input {
+    margin-left: 10px;
+    cursor: pointer;
+    padding: 6px;
+    width: auto;
+    border: none;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    font-size: 17px;
+}
+
+/* grafico escola */
+
+.div-escola {
+    padding-left: 20px;
+    width: 70%;
+
+}
+
+.chart {
+    width: 100%;
+    min-height: 450px;
+}
+
+.div-escola label {
+    font-size: 19px;
+}
+
+.grafico-escola {
+    width: 54%;
+    height: auto;
+    padding-bottom: 1%;
+    margin-left: 5%;
+}
+
+/* Informações dp grafico */
+
+.informacoes-grafico {
+    text-align: center;
+}
+
+.informacoes-grafico h3 {
+    margin-top: 20px;
+}
+
+.informacoes-grafico span {
+    display: block;
+    background-color: var(--inputSelct);
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+    text-align: initial;
+    padding-left: 10%;
+    margin-left: 30px;
+    margin-top: 20px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#opcao {
+    background-color: #383838;
+    color: white;
+    padding-left: 0px;
+    text-align: center;
+}
+
+.span {
+    display: none;
+    height: auto;
+}
+
+.informacoes-grafico span:hover {
+    background-color: goldenrod;
+    color: white;
+}
+
+
+
+/*Caixa com dados ao passar em uma fatia do gráfico*/
+.google-visualization-tooltip {
+    width: 150px !important;
+    border: none !important;
+    border-radius: 5px !important;
+    background-color: #222 !important;
+    position: absolute !important;
+    box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75) !important;
+    font-size: 10px !important;
+
+}
+
+div.google-visualization-tooltip>ul>li>span {
+    color: #fff !important;
 }

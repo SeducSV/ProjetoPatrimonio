@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Patrimonio</title>
+    <link rel="shortcut icon" href="pastas/imagens/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="pastas/css/pseudo-index.css">
+</head>
+
+
+<body>
+    <main>
+        <div class="login">
+            <img src="pastas/imagens/logo.png" alt="Logo da Prefeitura de São vicente">
+           
+            <h1>Login</h1>
+            <form action="">
+                <label for="user">Usuário:</label>
+                <input type="text" name="user" id="user" required>
+                <label for="senha">Senha:</label>
+                <article>
+                    <input type="password" name="senha" id="senha" required>
+                    <span><i class="fa-solid fa-eye fa-lg icon"></i></span>
+                </article>
+                <a href="#">Esqueci minha senha</a>
+                <input type="submit" value="Entrar">
+            </form>
+        </div>
+        <div>
+            <aside class="linhas">
+                <span id="linhaP"></span>
+                <p>ou</p>
+                <span id="linhaU"></span>
+            </aside>
+            <article class="solicitante">
+                <h2>Solicitante</h2>
+                <p>
+                    Caso seja funcionário de uma instituição de ensino da Prefeitura Municipal de São Vicente e deseje solicitar um equipamento, clique no botão abaixo.
+                </p>
+                    <a href="solicitante.php"><button>Solicitar</button></a>
+            </article>
+
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="pastas/javascript/login.js"></script>
+</body>
+
+</html>
