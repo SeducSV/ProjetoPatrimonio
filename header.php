@@ -1,11 +1,11 @@
 
     <header>
         <nav class="indexNav">
-            <picture>
+            <a href="login.php"> <picture>
                 <source media="(max-width:450px)" srcset="pastas/imagens/logo.jpg">
                 
-          <a href="login.php"><img src="pastas/imagens/logo.png" alt="Logo da Prefeitura de São Vicente"></a> 
-            </picture>                
+         <img src="pastas/imagens/logo.png" alt="Logo da Prefeitura de São Vicente">
+            </picture></a>                 
             <menu id="itens" >
                 <ul>
                     <li><a href="login.php">Login</a></li>
