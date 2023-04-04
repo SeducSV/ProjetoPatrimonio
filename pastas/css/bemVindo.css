@@ -1,0 +1,60 @@
+@charset "UTF-8";
+@import "coresGlobais.css";
+
+
+/* Main */
+main{
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    background-color: white;
+    padding: 30px;
+    width: 70%;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.096);
+    border-radius: 5px;
+}
+
+main h1{
+    text-align: center;
+    margin: 20px 0px;
+}
+
+main hr{
+    display: block;
+    margin: auto;
+    width: 50%;
+    background-color: hsla(0, 0%, 0%, 0.116);
+    border: none;
+    height: 2px;
+}
+
+/* Media Query */
+@media screen and (max-width:1150px){
+    h1{
+        font-size: 33px;
+    }
+    main{
+        width: 90%;
+    }
+}
+@media screen and (max-height:770px){
+    body{
+        height: auto;
+    }
+}
+
+@media screen and (max-width:780px){
+
+    ul button{
+        font-size: 15px;        
+    }
+    h1{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width:650px){
+    h1{
+        font-size: 25px;
+    }
+    
+}
