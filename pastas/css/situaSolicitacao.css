@@ -38,6 +38,16 @@ input[type="submit"]{
 input[type="submit"]:hover{
     opacity: 0.8;
 }
+/* Aprovar */
+.aprovar p{
+    text-align: center;
+    margin-top: 20px;
+}
+.aprovar{
+    display: none;
+}
+
+
 
 /* Button */
 .repApro button{

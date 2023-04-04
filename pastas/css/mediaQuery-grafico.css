@@ -1,0 +1,55 @@
+@media screen and (max-width:1550px){
+    .organizar-graficos {
+        flex-direction: column;
+    }
+    
+.grafico{
+    align-self: center;
+    width: 80%;
+}
+.div-escola{
+    margin-top: 10%;
+    align-self: center;
+    width: 100%;
+}
+.organizar-graficoEscola{
+    width: 100%;
+    
+}
+.informacoes-grafico{
+    margin-left: 15px;
+}
+}
+@media screen and (max-width:1025px){
+   
+.organizar-graficoEscola{
+   flex-direction: column;
+    justify-content: center;
+    
+} 
+.grafico-escola{
+    align-self: center;
+    width: 80%;
+}
+}
+@media screen and (max-width:790px){
+    .grafico,.grafico-escola{
+        width: 100%;
+    }
+    .grafico-escola, .informacoes-grafico span {
+        margin-left: 0%;
+    }
+    .sair{
+        display: block;
+        float: none;
+    }
+    .div-escola{
+        padding-left: 0px;
+    }
+}
+@media screen and (max-width:580px){
+    main{
+        max-width: 98%;
+        padding: 10px;
+    }
+}
